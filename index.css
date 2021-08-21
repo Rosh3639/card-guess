@@ -1,52 +1,65 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: segoe UI ;
+  font-family: segoe UI;
 }
 
-.content{
+.content {
   width: 90%;
   padding-top: 0%;
   padding-bottom: 2%;
   /* background-color: black; */
   margin-left: 6%;
 }
-.pad{
+
+.pad {
   /* color: blueviolet; */
   text-align: center;
 }
-.cards{
-  width:100%;
-  height:10%;
+
+.cards {
+  width: 100%;
+  height: 10%;
   /* background-color:black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.opened{
-  display:none;
+.opened {
+  display: none;
 }
-.header{
+
+.header {
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.card{
-  height:400px;
-  width:18%;
+
+.card {
+  height: 350px;
+  width: 18%;
   /* background-color: yellow; */
   margin-top: 30px;
   background-size: cover;
 }
-.overlay{
-  height: 400px;
+
+.card:hover {
+  box-shadow: 0 14px 28px 0 rgb(0 0 0 / 20%), 0 30px 50px 0 rgb(0 0 0);
+  height: 350px;
+  width: 19%;
+}
+
+.overlay {
+  height: 350px;
   width: 100%;
   background-color: black;
 }
-.overlay:hover{
+
+.overlay:hover {
   background-color: yellow;
 }

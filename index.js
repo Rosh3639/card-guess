@@ -67,7 +67,7 @@ function displayCards(data) {
 
   let cardsString = "";
 
-  data.forEach(function(card, index) {
+  data.forEach(function (card, index) {
     cardsString += `
               <div class="card" style="background-image:url('${card.image}')">
                   <div class = "overlay ${card.status}" onclick="openCard(${index})">
@@ -86,7 +86,7 @@ displayCards(cards);
 let score = 0;
 let cardCount = 1;
 let val1 = null;
-let  val2 = null;
+let val2 = null;
 
 function openCard(index) {
 
@@ -99,19 +99,18 @@ function openCard(index) {
     cardCount++;
   } else if (cardCount === 2) {
     val2 = cards[index].value;
-    
+
     //console.log(val1, val2);
 
     if (val1 === val2) {
       score++;
-      document.getElementById('score').innerText=score;
+      document.getElementById('score').innerText = score;
 
       //Reset after one guess
       val1 = null;
       val2 = null;
       cardCount = 1;
-    }
-    else{
+    } else {
       alert('Game Over!')
       location.reload()
     }
